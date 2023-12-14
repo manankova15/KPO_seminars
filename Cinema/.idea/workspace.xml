@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a0dfc1d4-e73c-4cea-b120-0c5abd86b924" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/Task2_Echo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task2_Echo/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/Task3_RemoveDuplicates.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task3_RemoveDuplicates/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/Task4_UnderlineSum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task4_UnderlineSum/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/Task5_Figures.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Семинар_02_12/Task5_Figures/src/main/kotlin/Main.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2ZRNgvvxe5vrVmiCH3yQ9AYadwt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Kotlin"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0dfc1d4-e73c-4cea-b120-0c5abd86b924" name="Changes" comment="" />
+      <created>1702381056457</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702381056457</updated>
+    </task>
+    <servers />
+  </component>
+</project>
