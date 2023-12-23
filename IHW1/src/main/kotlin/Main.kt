@@ -1,29 +1,36 @@
 package System
+
 import java.time.LocalDateTime
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 fun main(args: Array<String>) {
-    val dataRepository = DataRepository("data")
-    val objectMapper = ObjectMapper().registerModule(JavaTimeModule())
+    val filmRepository = DataRepository(Film::class.java, "data")
+    val sessionRepository = DataRepository(Session::class.java, "data")
 
-    val film1 = Film(id = 999, title = "Inception", durationMinutes = 150)
-    dataRepository.addFilm(film1)
+    /*val filmSerializer = Film.serializer()
+    val sessionSerializer = Session.serializer()
 
-    val time = LocalDateTime.of(2023, 12, 31, 18, 0,0)
+    *//*val newFilm = Film(*//**//* initialize film *//**//*)
+    val newSession = Session(*//**//* initialize session *//**//*)*//*
+
+    filmRepository.add(newFilm, filmSerializer, sessionSerializer)
+    sessionRepository.add(newSession, filmSerializer, sessionSerializer)
+
+
+*/
+    val film1 = Film(id = 66, title = "Inception", durationMinutes = 150)
+    filmRepository.add(film1)
+
     val seats = listOf(
-        Seat(2,2,true),
-        Seat(2,3,true),
-        Seat(2,4,false)
+        Seat(2, 2, true),
+        Seat(2, 3, true),
+        Seat(2, 4, false)
     )
-    val session = Session(id = 1, film = film1, startTime = "2024-01-01T10:00", seats = seats)
-    dataRepository.addSession(session)
-    //val Ticket = Ticket(id = 1, session = "Inception", durationMinutes = 150)
-    //dataRepository.addFilm(film)
+    val session = Session(id = 55, film = film1, startTime = "2024-01-01T10:00", seats = seats)
+    sessionRepository.add(session)
 
-    val filmsList = dataRepository.getFilms()
+    val filmsList = filmRepository.getAll()
     println("Films: $filmsList")
 
-    val sessionList = dataRepository.getSessions()
+    val sessionList = sessionRepository.getAll()
     println("Sessions: $sessionList")
 }
