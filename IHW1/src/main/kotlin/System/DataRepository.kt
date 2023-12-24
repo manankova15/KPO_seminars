@@ -1,6 +1,5 @@
 package System
 
-import kotlinx.serialization.KSerializer
 import java.io.File
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.decodeFromString
@@ -13,42 +12,23 @@ class DataRepository<T>(private val clazz: Class<T>, private val filePath: Strin
         loadData()
     }
 
-    /*private fun saveData(serializer: KSerializer<T>)
-        {try {
-            val fileName = "$filePath/${clazz.simpleName.lowercase()}s.json"
-
-            val json = Json { prettyPrint = true }
-
-            val jsonData = json.encodeToString(serializer, data)
-
-            File(fileName).writeText(jsonData)
-        } catch (e: Exception) {
-            handleException(e, "Warnings while saving ${clazz.simpleName}")
-        }
-    }*/
-
-    private fun saveData() {
+    internal fun saveData() {
         try {
             when (clazz.simpleName) {
                 "Film" -> {
-                    val dataList = data as MutableList<Film>
-                    "films.json".also { File("$filePath/$it").writeText(Json.encodeToString(dataList)) }
+                    "films.json".also { File("$filePath/$it").writeText(Json.encodeToString(data as MutableList<Film>)) }
                 }
                 "Session" -> {
-                    val dataList = data as MutableList<Session>
-                    "sessions.json".also { File("$filePath/$it").writeText(Json.encodeToString(dataList)) }
+                    "sessions.json".also { File("$filePath/$it").writeText(Json.encodeToString(data as MutableList<Session>)) }
                 }
                 "Seat" -> {
-                    val dataList = data as MutableList<Seat>
-                    "seats.json".also { File("$filePath/$it").writeText(Json.encodeToString(dataList)) }
+                    "seats.json".also { File("$filePath/$it").writeText(Json.encodeToString(data as MutableList<Seat>)) }
                 }
                 "Ticket" -> {
-                    val dataList = data as MutableList<Ticket>
-                    "tickets.json".also { File("$filePath/$it").writeText(Json.encodeToString(dataList)) }
+                    "tickets.json".also { File("$filePath/$it").writeText(Json.encodeToString(data as MutableList<Ticket>)) }
                 }
                 "User" -> {
-                    val dataList = data as MutableList<User>
-                    "users.json".also { File("$filePath/$it").writeText(Json.encodeToString(dataList)) }
+                    "users.json".also { File("$filePath/$it").writeText(Json.encodeToString(data as MutableList<User>)) }
                 }
                 else -> throw IllegalArgumentException("Unsupported class: ${clazz.simpleName}")
             }
@@ -57,13 +37,6 @@ class DataRepository<T>(private val clazz: Class<T>, private val filePath: Strin
         }
     }
 
-    /*private fun saveData() {
-        try {
-            File("$filePath/${clazz.simpleName.lowercase()}s.json").writeText(Json.encodeToString(data as MutableList<T>))
-        } catch (e: Exception) {
-            handleException(e, "Warnings while saving ${clazz.simpleName}")
-        }
-    }*/
     private fun loadData() {
         try {
             val file = File("$filePath/${clazz.simpleName.lowercase()}s.json")
@@ -86,34 +59,6 @@ class DataRepository<T>(private val clazz: Class<T>, private val filePath: Strin
             handleException(e, "Warnings while reading ${clazz.simpleName}")
         }
     }
-
-
-
-
-    /*private fun loadData() {
-        try {
-            val file = File("$filePath/${clazz.simpleName.lowercase()}s.json")
-
-            if (file.exists()) {
-                val read = file.readText(Charsets.UTF_8)
-                if (read.isNotBlank()) {
-                    data = Json.decodeFromString<MutableList<T>>(read)
-                }
-            }
-        } catch (e: Exception) {
-            handleException(e, "Warnings while reading ${clazz.simpleName}")
-        }
-    }*/
-
-
-    /*private fun loadData() {
-        try {
-            val read = File("$filePath/${clazz.simpleName.lowercase()}s.json").readText(Charsets.UTF_8)
-            data = Json.decodeFromString<MutableList<T>>(read)
-        } catch (e: Exception) {
-            handleException(e, "Warnings while reading ${clazz.simpleName}")
-        }
-    }*/
 
     private fun handleException(e: Exception, message: String) {
         println(e.printStackTrace())

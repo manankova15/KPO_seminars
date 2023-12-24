@@ -6,17 +6,6 @@ fun main(args: Array<String>) {
     val filmRepository = DataRepository(Film::class.java, "data")
     val sessionRepository = DataRepository(Session::class.java, "data")
 
-    /*val filmSerializer = Film.serializer()
-    val sessionSerializer = Session.serializer()
-
-    *//*val newFilm = Film(*//**//* initialize film *//**//*)
-    val newSession = Session(*//**//* initialize session *//**//*)*//*
-
-    filmRepository.add(newFilm, filmSerializer, sessionSerializer)
-    sessionRepository.add(newSession, filmSerializer, sessionSerializer)
-
-
-*/
     val film1 = Film(id = 66, title = "Inception", durationMinutes = 150)
     filmRepository.add(film1)
 
