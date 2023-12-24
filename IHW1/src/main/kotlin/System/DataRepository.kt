@@ -5,14 +5,14 @@ import kotlinx.serialization.encodeToString
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 
-class DataRepository<T>(private val clazz: Class<T>, private val filePath: String) {
+class DataRepository<T: Identifiable>(private val clazz: Class<T>, private val filePath: String) {
     private var data = mutableListOf<T>()
 
     init {
         loadData()
     }
 
-    internal fun saveData() {
+    fun saveData() {
         try {
             when (clazz.simpleName) {
                 "Film" -> {
@@ -71,4 +71,12 @@ class DataRepository<T>(private val clazz: Class<T>, private val filePath: Strin
     }
 
     fun getAll(): List<T> = data
+
+    fun remove(id: Int) {
+        val itemToRemove = data.find { it.id == id }
+        if (itemToRemove != null) {
+            data.remove(itemToRemove)
+            saveData()
+        }
+    }
 }
